@@ -158,6 +158,8 @@ function App() {
   way["social_facility"~"nursing_home|assisted_living"](around:${radius},${lat},${lon});
   node["healthcare"="nursing_home"](around:${radius},${lat},${lon});
   way["healthcare"="nursing_home"](around:${radius},${lat},${lon});
+  node["name"~"Repouso|Asilo|Lar de Idoso|Casa de Idoso|Geriatria|Residencial Sênior",i](around:${radius},${lat},${lon});
+  way["name"~"Repouso|Asilo|Lar de Idoso|Casa de Idoso|Geriatria|Residencial Sênior",i](around:${radius},${lat},${lon});
 );
 out center;`;
     try {
